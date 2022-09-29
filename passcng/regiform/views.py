@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm, PasswordChangeForm, SetPasswordForm, SetPasswordForm
 from django.contrib.auth import authenticate, login, logout, update_session_auth_hash
 # Create your views here.
-def sign_up(request):
+def sign_up(request): 
     if request.method == 'POST':
         fm = Signupform(request.POST)
         if fm.is_valid():
